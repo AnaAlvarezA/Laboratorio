@@ -8,7 +8,8 @@
         <script src="./laboratorio.js"></script>
     </head>
 
-    <body>
+    <!-- utilizo onload para que mediante la funcion de javascript, se ponga el foco en el botón Borrar Datos -->
+    <body onload="foco()">
         <header>
             <h1 id="cabecera">Formulario Información Alta Telefónica</h1>
         </header>
@@ -18,15 +19,15 @@
             <fieldset form="formulario" class="apartado">
                 <legend class="leyenda">Datos Personales</legend>
                     <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" class="campo" maxlength="30" pattern="[A-Za-z]" required /><br>
+                    <input type="text" id="nombre" class="campo" maxlength="30" pattern="[A-Za-z]" /><br>
                     <label for="apellidos">Apellidos: </label>
-                    <input type="text" id="apellidos" class="campo" maxlength="60" pattern="[A-Za-z]" required /><br>
+                    <input type="text" id="apellidos" class="campo" maxlength="60" pattern="[A-Za-z]" /><br>
                     <label for="direccion">Dirección: </label>
-                    <input type="text" id="direccion" class="campo" maxlength="60" pattern="[A-Za-z0-9]" required /><br>
+                    <input type="text" id="direccion" class="campo" maxlength="60" pattern="[A-Za-z0-9]" /><br>
                     <label for="codigoPostal">Código Postal: </label>
-                    <input type="text" id="codigoPostal" class="campo" pattern="[0-9]{5}" required /><br>
+                    <input type="text" id="codigoPostal" class="campo" pattern="[0-9]{5}" /><br>
                     <label for="localidad">Localidad: </label>
-                    <input type="text" id="localidad" class="campo" pattern="[A-Za-z]" required /><br>
+                    <input type="text" id="localidad" class="campo" pattern="[A-Za-z]" /><br>
             </fieldset><br>
             
             <fieldset form="formulario" class="apartado">
@@ -86,7 +87,7 @@
             </fieldset>
 
             <button class="boton1" type="submit">Enviar Datos </button>
-            <button class="boton1" type="reset" autofocus>Borrar Datos</button><br>
+            <button class="boton1" type="reset" id="reset" autofocus>Borrar Datos</button><br>
             <button class="boton2" type="button" onclick="mostrarValoracion();">Mostrar<br> Valoración</button>
             <button class="boton2" type="button" onclick="mostrarCuenta();">Mostrar<br> Cuenta</button>
             <button class="boton2" type="button" onclick="mostrarDiaSemana();">Mostrar Dia<br> Semana</button>

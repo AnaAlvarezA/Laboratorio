@@ -28,6 +28,9 @@
     font-family: Tahoma, sans-serif;
     background-color: rgb(238, 231, 231);
 }
+.boton1:focus {
+    border: 2px solid blue;
+}
 /* Botones Javascript que realizan la función definida en cada uno de ellos*/
 .boton2 {
     background-color: #fcbccc;

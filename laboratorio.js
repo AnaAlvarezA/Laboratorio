@@ -29,5 +29,7 @@ function mostrarDiaSemana(){
     alert("La fecha seleccionada en el elemento de fecha es un "+ diaSemana[dia]);
 }
 
-
+window.onload = function foco() {
+    document.getElementById("reset").focus(); //poner foco en el botón Borrar Datos, al cargar la página
+};
  
