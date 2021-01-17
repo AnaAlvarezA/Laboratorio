@@ -1,37 +1,39 @@
+/* Titulo principal */
 #cabecera  {
     text-align: center;
-    color: rgb(0, 81, 255);
+    color: #0900fc;
     text-shadow:2px 2px 4px yellow;
 }
 
+/* Agrupación fieldset */
 .apartado {
     background-color:#04fcfc;
     border:none; 
     border-radius:5px;
 }
-
+/* Nombre de las agrupaciones */
 .leyenda {
     background-color: red;
     color: white;
 }
-
+/* Campos tipo input text*/
 .campo {
     border-radius: 4px;
     background-color: yellow;
     border-color: rgb(241, 235, 235);
 }
-
+/* Botones HTML con valores predeterminados*/
 .boton1 {
     margin-top: 2px;
     font-family: Tahoma, sans-serif;
     background-color: rgb(238, 231, 231);
 }
-
+/* Botones Javascript que realizan la función definida en cada uno de ellos*/
 .boton2 {
     background-color: #fcbccc;
     margin-top: 2px;
     width: 96px;
-    height: 40px;  
+    height: 42px;  
     font-family: Tahoma, sans-serif;
     border-radius: 4px;
     border: 0;
